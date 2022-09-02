@@ -146,7 +146,8 @@ const sliderValue = document.querySelector(".slider_value")
 sliderValue.innerHTML = defaultValue + "%"
 
 slider.addEventListener("input", () => {
-  sliderValue.innerHTML = slider.value + "%"
+    document.querySelector('audio.active').volume = slider.value / 100;
+    sliderValue.innerHTML = slider.value + "%"
 })
 
 //
@@ -202,6 +203,7 @@ const percentLine = timeLine.querySelector('.percent')
 const loop = document.querySelector('.controls .loop')
 const randomControl = document.querySelector('.controls .random')
 const music = document.querySelector('audioplayer')
+const audioActive = document.querySelector('audio.active')
 
 
 listItem[0].classList.add('active')
@@ -212,7 +214,6 @@ let currentTime = ''
 //7. khi nhấn bài bài hát
 listItem.forEach(item => {
     item.addEventListener('click', function () {
-
         thumbnail.classList.remove('pause')
         thumbnail.classList.remove('play')
 
@@ -220,7 +221,7 @@ listItem.forEach(item => {
         document.querySelector('.item.active').classList.remove('active')
         item.classList.add('active')
 
-        //6.2 dừng audio đang phát vào đặt thời gian về 0
+        //6.2 dừng audio đang phát vào đặt thời gian về 0 và update âm lượng
         document.querySelector('audio.active').pause()
         document.querySelector('audio.active').currentTime = 0
 
@@ -245,6 +246,7 @@ listItem.forEach(item => {
 
 //8. khi ấn play
 play.addEventListener('click', function () {
+
     forWard.style.pointerEvents = 'all'
 
     thumbnail.classList.remove('pause')
@@ -256,6 +258,7 @@ play.addEventListener('click', function () {
 
     //8.2 phát audio đang active
     document.querySelector('audio.active').play()
+    setVolume(slider.value)
 
     //8.3 hiệu ứng thời gian hiện tại của bài hát
     currentTime = setInterval(() => {
