@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>youaresweet</title>
+        <link rel="icon" type="image/x-icon" href="./ic_web.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <main>
+
+        <div id="playing">
+            <div class="thumbnail">
+                <img src="./images/01.jpeg" alt="">
+            </div>
+
+            <p class="song">Vì anh đâu có biết</p>
+            <p class="singer">Madihu (Feat. Vũ.)</p>
+            
+            <div class="time-line">
+                <div class="circle"></div>
+                <div class="percent"></div>
+            </div>
+
+            <div class="time">
+                <div class="left">00:00</div>
+                <div class="right">04:20</div>
+            </div>
+
+            <div class="controls">
+                <span class="oi random" data-glyph="random"></span>
+                <span class="oi backward" data-glyph="media-skip-backward"></span>
+                <span class="oi media play active" data-glyph="media-play"></span>
+                <span class="oi media pause" data-glyph="media-pause"></span>
+                <span class="oi forward" data-glyph="media-skip-forward"></span>
+                <span class="oi loop" data-glyph="loop"></span>
+
+            </div>
+
+        </div>
+     
+        <div id="playlist">
+            
+        </div>
+        
+    </main>
+
+    <div class="footer">
+        <h3>youaresweet<reg>®</reg></h3>
+    </div>
+
+
+    <div id="audioplayerskin">
+        <!-- <button id="pButton" class="play" onclick="playAudio()"> -->
+        <!-- </button> -->
+        <div class="slider" id="volume_control">
+            <input type="range" oninput="setVolume(this.value)" onchange="setVolume(this.value)" id="rngVolume" min="0" max="100" step="1" value="100">
+            <span class="slider_value"></span>
+        </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
