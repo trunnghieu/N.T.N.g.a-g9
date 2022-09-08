@@ -53,6 +53,36 @@ const data = [
         avatar: './images/09.jpeg',
         mp3: './music/09.mp3'
     },
+    {
+        song: 'Bài ca tuổi trẻ',
+        singer: 'Da LAB, Vũ Bùi Thu Thủy, Linh Cáo, Mel G',
+        avatar: './images/10.jpeg',
+        mp3: './music/10.mp3'
+    },
+    {
+        song: 'Có Em Đời Bỗng Vui',
+        singer: 'Chillies',
+        avatar: './images/11.jpeg',
+        mp3: './music/11.mp3'
+    },
+    {
+        song: 'Tiny love',
+        singer: 'Thịnh Suy',
+        avatar: './images/12.jpeg',
+        mp3: './music/12.mp3'
+    },
+    {
+        song: 'Chuyện Rằng',
+        singer: 'Thịnh Suy',
+        avatar: './images/13.jpeg',
+        mp3: './music/13.mp3'
+    },
+    {
+        song: 'You are my everything',
+        singer: 'Gummy',
+        avatar: './images/14.jpeg',
+        mp3: './music/14.mp3'
+    },
 
 ]
 
@@ -172,7 +202,7 @@ data.forEach((item, index) => {
     <div class="item__song">${item.song}</div>
     <div class="item__singer">${item.singer}</div>
     </div>
-    <span class="item__time">00:00</span>
+    <span class="item__time">--:--</span>
     </div>
     `)
 });
