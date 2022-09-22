@@ -83,7 +83,78 @@ const data = [
         avatar: './images/14.jpeg',
         mp3: './music/14.mp3'
     },
-
+    {
+        song: 'Yêu em dài lâu',
+        singer: 'Anh Thư ft. Trường Giang',
+        avatar: './images/15.png',
+        mp3: './music/15.mp3'
+    },
+    {
+        song: 'Mùa Thu Cho Em',
+        singer: 'Lưu Tuấn Phong',
+        avatar: './images/16.png',
+        mp3: './music/16.mp3'
+    },
+    {
+        song: 'Tình Thôi Xót Xa',
+        singer: 'Lưu Tuấn Phong',
+        avatar: './images/17.jpeg',
+        mp3: './music/17.mp3'
+    },
+    {
+        song: 'Người Tình Mùa Đông',
+        singer: 'Lưu Tuấn Phong',
+        avatar: './images/18.jpeg',
+        mp3: './music/18.mp3'
+    },
+    {
+        song: 'Dịu Dàng Đến Từng Phút Giây',
+        singer: 'Charles',
+        avatar: './images/19.jpeg',
+        mp3: './music/19.mp3'
+    },
+    {
+        song: 'Nàng Thơ Xứ Huế',
+        singer: 'Phạm Anh Duy',
+        avatar: './images/20.jpeg',
+        mp3: './music/20.mp3'
+    },
+    {
+        song: 'Khi Cô Đơn Em Nhớ Ai',
+        singer: 'Lưu Tuấn Phong',
+        avatar: './images/21.jpeg',
+        mp3: './music/21.mp3'
+    },
+    {
+        song: 'Chầm Chậm Thích Em',
+        singer: 'Thành Nghiệp',
+        avatar: './images/22.jpeg',
+        mp3: './music/22.mp3'
+    },
+    {
+        song: 'Hẹn Một Mai',
+        singer: 'Lưu Tuấn Phong',
+        avatar: './images/23.jpeg',
+        mp3: './music/23.mp3'
+    },
+    {
+        song: 'Không Cần Phải Hứa Đâu Em',
+        singer: 'Quang Minh',
+        avatar: './images/24.jpeg',
+        mp3: './music/24.mp3'
+    },
+    {
+        song: 'Yêu Em Dại Khờ',
+        singer: 'Hoàng Anh Karon',
+        avatar: './images/25.jpeg',
+        mp3: './music/25.mp3'
+    },
+    // {
+    //     song: 'Em À',
+    //     singer: 'Lưu Tuấn Phong',
+    //     avatar: './images/26.jpeg',
+    //     mp3: './music/26.mp3'
+    // },
 ]
 
 //1. thêm số 0 vào đằng trước các số 0 đến 9
