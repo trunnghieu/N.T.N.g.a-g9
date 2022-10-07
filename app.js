@@ -125,12 +125,12 @@ const data = [
         avatar: './images/21.jpeg',
         mp3: './music/21.mp3'
     },
-    // { // Remove this song
-    //     song: 'Chầm Chậm Thích Em',
-    //     singer: 'Thành Nghiệp',
-    //     avatar: './images/22.jpeg',
-    //     mp3: './music/22.mp3'
-    // },
+    {
+        song: 'Chuyện Đôi Ta 「Lofi Ver」',
+        singer: 'Emcee L ft Muộii',
+        avatar: './images/22.jpeg',
+        mp3: './music/22.mp3'
+    },
     {
         song: 'Hẹn Một Mai',
         singer: 'Lưu Tuấn Phong',
