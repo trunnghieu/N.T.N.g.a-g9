@@ -149,6 +149,12 @@ const data = [
         avatar: './images/25.jpeg',
         mp3: './music/25.mp3'
     },
+    {
+        song: 'Something',
+        singer: 'Gang Haein',
+        avatar: './images/27.jpeg',
+        mp3: './music/27.mp3'
+    },
     // {
     //     song: 'Em À',
     //     singer: 'Lưu Tuấn Phong',
