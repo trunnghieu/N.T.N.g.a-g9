@@ -152,15 +152,27 @@ const data = [
     {
         song: 'Something',
         singer: 'Gang Haein',
+        avatar: './images/26.jpeg',
+        mp3: './music/26.mp3'
+    },
+    {
+        song: 'Tan Biến',
+        singer: 'Nguyễn Hải Phong',
         avatar: './images/27.jpeg',
         mp3: './music/27.mp3'
     },
-    // {
-    //     song: 'Em À',
-    //     singer: 'Lưu Tuấn Phong',
-    //     avatar: './images/26.jpeg',
-    //     mp3: './music/26.mp3'
-    // },
+    {
+        song: 'Dòng thời gian',
+        singer: 'Nguyễn Hải Phong',
+        avatar: './images/28.jpeg',
+        mp3: './music/28.mp3'
+    },
+    {
+        song: 'Tình về nơi đâu',
+        singer: 'Thanh Bùi ft. Tata Young',
+        avatar: './images/29.jpeg',
+        mp3: './music/29.mp3'
+    },
 ]
 
 //1. thêm số 0 vào đằng trước các số 0 đến 9
