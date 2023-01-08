@@ -1,3 +1,36 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js';
+import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAHT4vZ5ub0IYb2_U0MpmvCGmnduq071Ro",
+    authDomain: "ntnga-g9.firebaseapp.com",
+    databaseURL: "https://ntnga-g9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "ntnga-g9",
+    storageBucket: "ntnga-g9.appspot.com",
+    messagingSenderId: "731249025208",
+    appId: "1:731249025208:web:2d4b51aa4775c2cdbe544d"
+  };
+
+// Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+function writeVisitTime(dateTime) {
+    set(ref(db, 'visits/' + dateTime), {
+        dateTime: getTime()
+    });
+}
+
+function getTime() {
+    var m = new Date();
+    return m.getUTCFullYear() + "/" +
+        ("0" + (m.getUTCMonth() + 1)).slice(-2) + "/" +
+        ("0" + m.getUTCDate()).slice(-2) + " " +
+        ("0" + m.getUTCHours()).slice(-2) + ":" +
+        ("0" + m.getUTCMinutes()).slice(-2) + ":" +
+        ("0" + m.getUTCSeconds()).slice(-2);
+}
+
 const data = [
     {
         song: 'Vì Anh Đâu Có Biết',
@@ -173,7 +206,70 @@ const data = [
         avatar: './images/29.jpeg',
         mp3: './music/29.mp3'
     },
+    {
+        song: 'Internet Love',
+        singer: 'hnhngan',
+        avatar: './images/30.jpeg',
+        mp3: './music/30.mp3'
+    },
+    {
+        song: 'Mưa bão',
+        singer: 'Kozee',
+        avatar: './images/31.jpeg',
+        mp3: './music/31.mp3'
+    },
+    {
+        song: 'Yêu',
+        singer: 'Châu Dương',
+        avatar: './images/32.jpeg',
+        mp3: './music/32.mp3'
+    },
+    {
+        song: 'Đưa Nhau Đi Trốn (Chill Version)',
+        singer: 'Đen, Linh Cáo',
+        avatar: './images/33.jpeg',
+        mp3: './music/33.mp3'
+    },
+    {
+        song: 'Bao tiền một mớ bình yên',
+        singer: '14 Casper, Bon',
+        avatar: './images/34.jpeg',
+        mp3: './music/34.mp3'
+    },
+    {
+        song: 'Anh Sẽ Đón Em',
+        singer: 'Trang, Nguyên',
+        avatar: './images/35.jpeg',
+        mp3: './music/35.mp3'
+    },
+    {
+        song: 'Có đâu ai ngờ',
+        singer: 'Thu Cầm',
+        avatar: './images/36.jpeg',
+        mp3: './music/36.mp3'
+    },
+    {
+        song: 'Thích em hơi nhiều',
+        singer: 'Wren Evans',
+        avatar: './images/37.jpeg',
+        mp3: './music/37.mp3'
+    },
+    {
+        song: 'Có chơi có chịu',
+        singer: 'Karik',
+        avatar: './images/38.jpeg',
+        mp3: './music/38.mp3'
+    },
+    {
+        song: 'Lấy chồng sớm làm gì',
+        singer: 'HuyR, Tuấn Cry',
+        avatar: './images/39.jpeg',
+        mp3: './music/39.mp3'
+    },
 ]
+
+//0. Log
+writeVisitTime((new Date()).getTime());
 
 //1. thêm số 0 vào đằng trước các số 0 đến 9
 function addZero(number) {
