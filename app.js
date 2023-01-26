@@ -266,6 +266,12 @@ const data = [
         avatar: './images/39.jpeg',
         mp3: './music/39.mp3'
     },
+    {
+        song: 'Pháo hồng',
+        singer: 'Đạt Long Vinh',
+        avatar: './images/40.jpeg',
+        mp3: './music/40.mp3'
+    },
 ]
 
 //0. Log
