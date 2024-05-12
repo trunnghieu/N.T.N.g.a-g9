@@ -22,13 +22,28 @@ function writeVisitTime(dateTime) {
 }
 
 function getTime() {
-    var m = new Date();
-    return m.getUTCFullYear() + "/" +
-        ("0" + (m.getUTCMonth() + 1)).slice(-2) + "/" +
-        ("0" + m.getUTCDate()).slice(-2) + " " +
-        ("0" + m.getUTCHours()).slice(-2) + ":" +
-        ("0" + m.getUTCMinutes()).slice(-2) + ":" +
-        ("0" + m.getUTCSeconds()).slice(-2);
+  // Create a new Date object to get the current time
+  const date = new Date();
+
+  // Get the time zone offset in minutes
+  const timeZoneOffsetMinutes = date.getTimezoneOffset();
+
+  // Convert the offset to hours and calculate the sign
+  const offsetHours = Math.abs(Math.floor(timeZoneOffsetMinutes / 60));
+  const offsetSign = timeZoneOffsetMinutes > 0 ? "-" : "+";
+
+  // Format the date to the desired format with the UTC/GMT offset
+  const formattedDate = `${date.getFullYear()}/${String(
+    date.getMonth() + 1
+  ).padStart(2, "0")}/${String(date.getDate()).padStart(2, "0")} ${String(
+    date.getHours()
+  ).padStart(2, "0")}:${String(date.getMinutes()).padStart(2, "0")}:${String(
+    date.getSeconds()
+  ).padStart(2, "0")} UTC${offsetSign}${String(offsetHours).padStart(
+    2,
+    "0"
+  )}:${String(Math.abs(timeZoneOffsetMinutes) % 60).padStart(2, "0")}`;
+  return formattedDate;
 }
 
 const data = [
