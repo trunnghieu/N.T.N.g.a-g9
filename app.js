@@ -48,9 +48,9 @@ function getTime() {
 
 const data = [
     {
-        song: 'Vì Anh Đâu Có Biết',
-        singer: 'Madihu (Feat. Vũ.)',
-        avatar: './images/01.jpeg',
+        song: 'Nơi Ta Chờ Em',
+        singer: 'Will',
+        avatar: './images/01.jpg',
         mp3: './music/01.mp3'
     },
 ]
